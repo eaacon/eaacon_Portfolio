@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(19, 20, 22);
+    height: 100vh;
+}
+
+.head{
+    height: 20rem;
+    width: 100%;
+    background-color: rgb(29, 32, 35);
+    background-image: url(../Images/Display/Splash_Image.jpg);
+    background-position: 50% 85%;
+    background-size: cover;
+}
+
+.title{
+    position: relative;
+    width: 50%;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+
+    line-height: 1em;
+    color: rgb(219, 179, 159);
+    
+    mix-blend-mode: color-dodge;
+}
+
+.back{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 1rem;
+    right: 1rem;
+    color:rgb(225, 148, 160);
+    mix-blend-mode: color-dodge;
+}
+
+h1{
+    font-family: 'Red Hat Mono', monospace;
+}
+
+.grid{
+    margin: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.art{
+    background-color: rgb(203, 91, 91);
+    height: 200px;
+    opacity: 10%;
+    padding-bottom: calc(9/16 * 100%);
+    border-radius: 1rem;
+}
+
+@media(min-width: 40em)
+{
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 60em)
+{
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(min-width: 90em)
+{
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(orientation:portrait) {
+    .title{
+        font-size: 10vw;
+    }
+}
+
+@media(orientation:landscape) {
+    .title{
+        font-size: 9vh;
+    }
+}
