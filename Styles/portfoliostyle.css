@@ -11,7 +11,7 @@ body {
 }
 
 .head {
-  height: 20rem;
+  height: 18rem;
   width: 100%;
   background-color: rgb(29, 32, 35);
   background-image: url(../Images/Display/Splash_Image.jpg);
@@ -36,8 +36,8 @@ body {
   height: 4rem;
   top: 1rem;
   right: 1rem;
-  color: rgb(225, 148, 160);
-  mix-blend-mode: color-dodge;
+  color: rgb(37, 27, 27);
+  opacity: 95%;
 }
 
 h1 {
