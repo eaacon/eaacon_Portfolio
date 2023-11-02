@@ -52,4 +52,8 @@ h2 {
 
 .mult {
   mix-blend-mode: multiply;
+}
+
+.logo {
+  color: rgb(151, 115, 92);
 }/*# sourceMappingURL=mainstyle.css.map */
