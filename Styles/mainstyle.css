@@ -13,7 +13,7 @@ body {
   height: 100vh;
   width: 100%;
   background-color: rgb(29, 32, 35);
-  background-image: url(../Images/Display/Splash_Image_2.jpg);
+  background-image: url("../Images/Display/Splash_Image_2.jpg");
   background-position: 60% 50%;
   background-size: cover;
 }

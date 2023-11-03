@@ -110,6 +110,16 @@ h4{
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
+.process4{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 3rem;
+    padding-bottom: 10rem;
+}
+
 .img1{
     width: 80%;
     padding: 2rem;
@@ -124,6 +134,12 @@ h4{
     width:70%;
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+.img4{
+    width: 65%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 .contact-info{
@@ -141,4 +157,24 @@ footer{
 
 footer:hover{
     cursor: default;
+}
+
+@media only screen and (max-width: 1000px){
+    nav{
+        font-size: .8em;
+    }
+    *{
+        line-height: 225%;
+    }
+    body{
+        font-size: 1.1em;
+    }
+    .process1, .process2{
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .img4{
+        width: 110%;
+    }
 }
