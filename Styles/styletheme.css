@@ -59,7 +59,7 @@ a:hover {
   min-height: 75vh;
   width: 100%;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -161,7 +161,7 @@ footer:hover {
 
 @media only screen and (max-width: 1000px) {
   nav {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   * {
     line-height: 225%;
@@ -176,5 +176,9 @@ footer:hover {
   }
   .img4 {
     width: 110%;
+  }
+  .front-lines-main, .about-main {
+    background-attachment: scroll;
+    min-height: 40vh;
   }
 }/*# sourceMappingURL=styletheme.css.map */
