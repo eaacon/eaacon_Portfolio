@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  line-height: 150%;
+}
+
+body {
+  font-family: "Libre Baskerville";
+  color: #f2f2e9;
+  background-color: #191b1f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav, .nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 2rem;
+}
+
+.nav-links {
+  gap: 2rem;
+}
+
+a {
+  color: #f2f2e9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3d5e4e;
+}
+
+.ab {
+  color: #ebeebe;
+}
+
+.me:hover {
+  cursor: default;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.front-lines-main {
+  background-image: url("../Pieces/Painting/Front Lines/FrontLines.jpg");
+  min-height: 75vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-main {
+  background-image: url("../Images/Display/Face_Close.jpg");
+  min-height: 60vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  margin: 0.5rem;
+}
+
+h4 {
+  color: #ebeebe;
+  font-size: 0.75em;
+  margin: -1.5rem;
+  opacity: 75%;
+  padding-bottom: 3rem;
+}
+
+.process1, .process2, .process3 {
+  padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.75em;
+}
+
+.process1 {
+  padding-right: 1rem;
+}
+
+.process2 {
+  padding-left: 1rem;
+}
+
+.process3 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.img1 {
+  width: 80%;
+  padding: 2rem;
+}
+
+.img2 {
+  width: 60%;
+  padding-top: 3rem;
+}
+
+.img3 {
+  width: 70%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.contact-info {
+  text-align: center;
+  word-spacing: 200%;
+  line-height: 200%;
+}
+
+footer {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  color: #ebeebe;
+}
+
+footer:hover {
+  cursor: default;
+}/*# sourceMappingURL=styletheme.css.map */

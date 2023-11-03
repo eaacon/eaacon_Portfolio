@@ -54,6 +54,8 @@ h2 {
   mix-blend-mode: multiply;
 }
 
-.logo {
+.cls-1 {
+  height: 10vh;
+  width: 100%;
   color: rgb(151, 115, 92);
 }/*# sourceMappingURL=mainstyle.css.map */
