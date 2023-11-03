@@ -4,7 +4,7 @@ const back = document.querySelector('.back');
 if(splash != null)
 {
     splash.addEventListener('click', () => {
-        location.href = '../portfolio.html';
+        location.href = '../frontlines.html';
     });
 }
 else if(back != null)
