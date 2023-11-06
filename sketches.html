@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>illustration</title>
+    
+    <link rel="stylesheet" href="Styles/portfoliostyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Gurajada&family=K2D:wght@500&family=Syne&display=swap" rel="stylesheet">
+
+    <script src = "Javascripts/nav.js" async></script>
+</head>
+
+<body>
+    <div class = "navbar"></div>
+
+    <ul class = "wall">
+        <li><img src="Pieces\Sketches\ManFig.jpg" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Sketches\Stop Sign.jpg" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Sketches\ML750s.jpg" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Sketches\VWjetta.jpg" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Sketches\Apple2.png" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Sketches\Ribeye.png" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces/Sketches/R.jpg" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Sketches\G.jpg" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Sketches\B.jpg" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Sketches\Trees.jpg" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Sketches\Church.jpg" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Sketches\Mtns.jpg" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Sketches\foodsketches.jpg" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Sketches\Orlando.jpg" onclick="Fullview(this.src)"></li>
+        <li></li>
+    </ul>
+
+    <div id = "modal">
+        <img id = "fullimg">
+        <span id = "close" onclick="CloseModal()">X</span>
+    </div>
+
+    <style>
+        .wall li{
+            height: 33vh;
+        }
+    </style>
+</body>
+</html>

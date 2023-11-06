@@ -1,5 +1,13 @@
+const nav = document.querySelector('.navbar')
+
 const splash = document.querySelector('.splash');
 const back = document.querySelector('.back');
+
+fetch("/navbar.html")
+.then(res=>res.text())
+.then(data=>{
+    nav.innerHTML = data;
+})
 
 if(splash != null)
 {
