@@ -7,9 +7,74 @@
 
 body{
     background-color: rgb(29, 32, 35);
+    color: #f2f2e9;
+    font-family: 'Libre Baskerville';
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+// header bar
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+a{
+    color: #f2f2e9;
+    font-family: 'K2D', sans-serif;
+    text-decoration: none;
+}
+
+a:hover{
+    filter: opacity(60%);
+}
+
+button{
+    margin-left: 2rem;
+    padding: .5rem 1.5rem;
+    font-family: 'K2D', sans-serif;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 12pt;
+}
+
+.me{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30pt;
+
+    margin-right: auto;
+}
+
+// portfolio
+header{
+    z-index: 1;
+
+    animation: navFade ease-out 3s;
+    animation-fill-mode: forwards;
+
+    position: absolute;
+    width: 100%;
+}
+
+.grid{
+    margin: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+// Splash Screen
 .splash{
+    z-index: 0;
     height: 100vh;
     width: 100%;
     background-color: rgb(29, 32, 35);
@@ -18,31 +83,34 @@ body{
     background-size: cover;
 }
 
-.center{
+.label{
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0;
     text-align: center;
 }
 
-.dim{
-    height: 100vh;
-    background-color: rgb(46, 41, 41);
-    opacity: 20%;
+.label:hover{
+    cursor: default;
 }
 
-h1{
-    font-family: 'Red Hat Mono', monospace;
-    font-size: 12vh;
-    font-weight: 600;
-    color: rgb(174, 178, 99);
+.eaacon{
+    width: 25vw;
+    filter: invert(48%) sepia(3%) saturate(3489%) hue-rotate(17deg) brightness(108%) contrast(104%);
+}
+
+.backdrop{
+    height: 100vh;
+    background-color: rgb(46, 41, 41);
+    mix-blend-mode: multiply;
+    animation: fadeInAnimation ease-out 2s;
+    animation-fill-mode: forwards;
 }
 
 h2{
-    font-family: 'Spectral', serif;
-    font-size: 4vh;
+    font-family: 'Gurajada', sans-serif;
+    font-size: 3vh;
     color: rgb(151, 115, 92);
 }
 
@@ -50,12 +118,20 @@ h2{
     mix-blend-mode: color-dodge;
 }
 
-.mult{
-    mix-blend-mode: multiply;
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 35%;
+     }
 }
 
-.cls-1{
-    height: 10vh;
-    width: 100%;
-    color: rgb(151, 115, 92) 
+@keyframes navFade {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+     }
 }
