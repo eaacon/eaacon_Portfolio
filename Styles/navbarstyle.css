@@ -1,3 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(28, 29, 31);
+  color: #f2f2e9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   display: flex;
   justify-content: flex-end;
