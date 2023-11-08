@@ -1,7 +1,6 @@
 const nav = document.querySelector('.navbar')
 
-const splash = document.querySelector('.splash');
-const back = document.querySelector('.back');
+const splash = document.querySelector('#splash');
 
 fetch("/navbar.html")
 .then(res=>res.text())
@@ -12,14 +11,7 @@ fetch("/navbar.html")
 if(splash != null)
 {
     splash.addEventListener('click', () => {
-        location.href = '../illustration.html';
-    });
-}
-else if(back != null)
-{
-    back.addEventListener('click', () => {
-        console.log('clicked');
-        location.href = '../index.html';
+        location.href = '../index.html#projects'
     });
 }
 
