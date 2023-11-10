@@ -12,10 +12,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Gurajada&family=K2D:wght@500&family=Syne&display=swap" rel="stylesheet">
 
-    <script src = "Javascripts/nav.js" async></script>
+    <script defer src = "Javascripts/nav.js" async></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </head>
 <body>
+    
     <div class = "navbar"></div>
+
+    <div class = "backdrop">
+        <div class = "mult"></div>
+    </div>
+
     <div class = contact-body>
         <div class = "contact-form">
             <form action="https://api.web3forms.com/submit" method="POST">
@@ -24,19 +31,12 @@
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="E-mail" required>
                 <textarea name="message" rows="7" placeholder = "Write a message..." required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 <div class = "submission">
-                    <div class="h-captcha" data-captcha="true"></div>
                     <button type="submit">Submit</button>
                 </div>
-    
             </form>
         </div>
     </div>
-    
-    <div class = "backdrop">
-        <div class = "mult"></div>
-    </div>
-    
-    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>

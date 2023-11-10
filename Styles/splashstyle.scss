@@ -80,19 +80,86 @@ h2{
  
 .project-wall{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
-    grid-auto-rows: 60vh;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-auto-rows: 350px;
+    gap: 1.5rem;
     padding: 2rem;
-    margin-bottom: 3rem;
 }
 
-.project-wall li a{
+.project-wall div{
     display: block;
     height: 100%;
     background-size: cover;
     background-position: center;
     border-radius: 1rem;
+}
+
+.project-wall li{
+    margin: 0;
+    transition: all 100ms ease-out;
+}
+
+.project-wall li:hover{
+    margin: -0.5%;
+}
+
+
+.project-wall a{
+    display: flex;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.project-wall a:hover{
+    transition: all 500ms;
+    background: rgba(0, 0, 0, 0);
+    
+    h3{
+        transition: all 150ms;
+        opacity: 0;
+    }
+}
+
+.project-wall h3{
+    width: 60%;
+    font-family: 'Gurajada', sans-serif;
+    font-size: 60pt;
+    line-height: 50pt;
+    text-align: center;
+}
+
+
+.hidden{
+    opacity: 0;
+    transition: all 1s ease-out;
+    transition-delay: 50ms;
+}
+
+.show{
+    opacity: 100;
+}
+
+
+// back to top
+#back{
+    width: 100;
+    display: flex;
+    justify-content: center;  
+    animation: arrowAnim2 ease-out 2s;
+    animation-iteration-count: infinite;  
+}
+
+#back img{
+    width: 15rem;
+    transform: rotate(180deg);
+    
+    padding: 3rem;
+    margin-bottom: 3rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -131,5 +198,19 @@ h2{
     60%, 100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes arrowAnim2{
+    0% {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    60%, 80%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 0;
     }
 }

@@ -63,6 +63,8 @@ input, textarea {
   padding: 2%;
   border-radius: 0.25rem;
   border-style: none;
+  font-family: "K2D", sans-serif;
+  font-size: 12pt;
 }
 
 input {
@@ -76,12 +78,11 @@ textarea {
 }
 
 .submission {
-  width: 100%;
   margin-top: 3%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 3%;
-       column-gap: 3%;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  place-items: center;
+  gap: 3%;
 }
 
 .h-captcha {
@@ -89,8 +90,8 @@ textarea {
 }
 
 form button {
-  margin: auto;
-  padding: 12% 18%;
+  padding: 1.5rem 3rem;
+  border-style: none;
   border-radius: 1.75rem;
   font-size: 13pt;
 }

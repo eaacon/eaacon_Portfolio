@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Gurajada&family=K2D:wght@500&family=Syne&display=swap" rel="stylesheet">
 
-    <script src = "Javascripts/nav.js" async></script>
+    <script defer src = "Javascripts/nav.js" async></script>
 </head>
 <body>
     <div class = "navbar"></div>
@@ -31,14 +31,58 @@
 
     <div id = "projects">
         <ul class = "project-wall">
-            <li class = "long"><a href="" style="background-image: url('Pieces/Development/CobaltCure/Cobaltcure_Thumb.jpg');"></a></li>
-            <li><a href="" style="background-image: url('Pieces/Concept Art/Under Strange Suns/Final_JPG.jpg');"></a></li>
-            <li class = "tall"><a href="frontlines.html" style = "background-image: url('Pieces/Painting/Front Lines/FrontLines.jpg');"></a></li>
-            <li><a href="" style = "background-image: url('Pieces/Concept Art/Akua/Akua_Concept.jpg');"></a></li>
-            <li><a href="" style = "background-image: url('Pieces/3D/Jess_Key.jpg');"></a></li>
-            <li><a href="" style = "background-image: url('Pieces/Development/USPS/USPS_Thumb.jpg');"></a></li>
-            <li><a href="" style="background-image: url('Pieces/Misc/Gamepi_Key.jpg');"></a></li>
+            <li class = "hidden long">
+                <div style="background-image: url('Pieces/Development/CobaltCure/Cobaltcure_Thumb.jpg');">
+                    <a href="">
+                        <h3>Cobalt Cure</h3>
+                    </a>
+                </div>
+            </li>
+            <li class = "hidden">
+                <div style="background-image: url('Pieces/Concept Art/Under Strange Suns/Final_JPG.jpg');">
+                    <a href="">
+                        <h3>Under Strange Suns</h3>
+                    </a>
+                </div>
+            </li>
+            <li class = "hidden">
+                <div style = "background-image: url('Pieces/Painting/Front Lines/FrontLines.jpg');">
+                    <a href="frontlines.html">
+                        <h3>Front Lines</h3>
+                    </a>
+                </div>
+            </li>
+            <li class = "hidden">
+                <div style = "background-image: url('Pieces/Concept Art/Akua/Akua_Concept.jpg');">
+                    <a href="">
+                        <h3>Akua</h3>
+                    </a>
+                </div>
+            </li>
+            <li class = "hidden">
+                <div style = "background-image: url('Pieces/Development/USPS/USPS_Thumb.jpg');">
+                    <a href="">
+                        <h3>United Snails Postal Service</h3>
+                    </a>
+                </div>
+            </li>
+            <li class = "hidden">
+                <div style = "background-image: url('Pieces/3D/Jess_Key.jpg');">
+                    <a href="">
+                        <h3>Jess</h3>
+                    </a>
+                </div>
+            </li>
+            <li class = "hidden">
+                <div style="background-image: url('Pieces/Misc/Gamepi_Key.jpg');">
+                    <a href="">
+                        <h3>Game Pi</h3>
+                    </a>
+                </div>
+            </li>
         </ul>
     </div>
+
+    <a href="#splash" id = "back"><img src="Images/SVG/Arrow.svg" id = "arrow2"></a>
 </body>
 </html>

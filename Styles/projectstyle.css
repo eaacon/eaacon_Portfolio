@@ -1,3 +1,17 @@
+.project-page {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-bar {
+  z-index: 1; /* Safari */
+  position: sticky;
+  top: 0;
+  background: black;
+  height: 100vh;
+  width: 30vw;
+}
+
 .page-content {
   display: flex;
   flex-direction: column;
@@ -8,7 +22,7 @@
 
 .front-lines-main {
   background-image: url("../Pieces/Painting/Front Lines/FrontLines.jpg");
-  min-height: 75vh;
+  min-height: 50vh;
   width: 100%;
   background-attachment: fixed;
   background-position: center top;
@@ -24,21 +38,6 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.title {
-  width: 100%;
-  text-align: center;
-  padding: 2rem;
-  margin: 0.5rem;
-}
-
-h4 {
-  color: #ebeebe;
-  font-size: 0.75em;
-  margin: -1.5rem;
-  opacity: 75%;
-  padding-bottom: 3rem;
 }
 
 .process1, .process2, .process3 {
@@ -133,4 +132,4 @@ footer:hover {
     background-attachment: scroll;
     min-height: 40vh;
   }
-}/*# sourceMappingURL=frontlines.css.map */
+}/*# sourceMappingURL=projectstyle.css.map */
