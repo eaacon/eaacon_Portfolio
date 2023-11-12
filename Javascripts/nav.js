@@ -42,3 +42,20 @@ function CloseModal()
 {
     document.getElementById("modal").style.display = "none";
 }
+
+var ToCClick = document.querySelector('#ToC')
+if(ToCClick != null)
+{
+    ToCClick.addEventListener('click', () => toggleDropdown());
+}
+
+function toggleDropdown()
+{
+    var ddContent = document.querySelector('.grid-drop')
+    if(ddContent.style.gridTemplateRows == "0fr")
+    {
+        ddContent.style.gridTemplateRows = "1fr"
+    }else{
+        ddContent.style.gridTemplateRows = "0fr"
+    }
+}
