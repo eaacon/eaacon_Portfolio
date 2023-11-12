@@ -1,135 +1,57 @@
 .project-page {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .info-bar {
   z-index: 1; /* Safari */
   position: sticky;
   top: 0;
-  background: black;
+  background: rgb(47, 51, 55);
   height: 100vh;
-  width: 30vw;
+  border-radius: 1rem 1rem 0 0;
+  margin-right: 1rem;
+  padding: 2rem;
 }
 
 .page-content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
   font-size: 15pt;
   font-family: "K2D", sans-serif;
 }
 
-.front-lines-main {
+.banner {
   background-image: url("../Pieces/Painting/Front Lines/FrontLines.jpg");
-  min-height: 50vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center top;
-  background-repeat: no-repeat;
+  background-position: 0 30%;
   background-size: cover;
+  min-height: 18rem;
+  margin: 0rem 1rem 1rem 1rem;
+  border-radius: 1rem;
 }
 
-.about-main {
-  background-image: url("../Images/Display/Face_Close.jpg");
-  min-height: 60vh;
+.section {
   width: 100%;
-  background-attachment: fixed;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.process1, .process2, .process3 {
-  padding-top: 1rem;
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 0.75em;
-}
-
-.process1 {
-  padding-right: 1rem;
-}
-
-.process2 {
-  padding-left: 1rem;
-}
-
-.process3 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.process4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 3rem;
-  padding-bottom: 10rem;
-}
-
-.img1 {
-  width: 80%;
+  display: grid;
+  place-items: center;
   padding: 2rem;
 }
 
-.img2 {
-  width: 60%;
-  padding-top: 3rem;
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.img3 {
-  width: 70%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.page-content img {
+  width: 100%;
+  padding: 2rem;
 }
 
-.img4 {
-  width: 65%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.section p {
+  display: block;
 }
 
-.contact-info {
-  text-align: center;
-  word-spacing: 200%;
-  line-height: 200%;
-}
-
-footer {
-  text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-  color: #ebeebe;
-}
-
-footer:hover {
-  cursor: default;
-}
-
-@media only screen and (max-width: 1000px) {
-  nav {
-    font-size: 0.7em;
-  }
-  * {
-    line-height: 225%;
-  }
-  body {
-    font-size: 1.1em;
-  }
-  .process1, .process2 {
-    flex-direction: column;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .img4 {
-    width: 110%;
-  }
-  .front-lines-main, .about-main {
-    background-attachment: scroll;
-    min-height: 40vh;
-  }
+.wide {
+  grid-column: span 2/auto;
 }/*# sourceMappingURL=projectstyle.css.map */
