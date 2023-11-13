@@ -18,13 +18,13 @@
 .info-bar h1{
     font-family: 'Libre Baskerville', serif;
     font-size: 30pt;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .info-bar h4{
     font-family: 'K2D', sans-serif;
     font-size: 10pt;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 ol li{
@@ -34,10 +34,11 @@ ol li{
 
 #ToC{
     background-color: rgb(37, 38, 41);
+    color: rgb(216, 216, 216);
     border-style: solid;
     border-width: 2px;
     border-radius: 1rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.75rem 1rem 0.75rem 1rem;
 
     font-family: 'Libre Baskerville', serif;
     font-size: 10pt;
@@ -55,6 +56,10 @@ ol li{
 
     font-family: 'Libre Baskerville', serif;
     color: white;
+    text-decoration: underline;
+    font-size: 12pt;
+
+    cursor: pointer;
 }
 
 #ToC li{
