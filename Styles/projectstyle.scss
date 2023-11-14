@@ -23,7 +23,8 @@
 
 .info-bar h4{
     font-family: 'K2D', sans-serif;
-    font-size: 10pt;
+    font-size: 12pt;
+    font-weight: 500;
     margin-bottom: 1.5rem;
 }
 
@@ -35,10 +36,9 @@ ol li{
 #ToC{
     background-color: rgb(37, 38, 41);
     color: rgb(216, 216, 216);
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 1rem;
-    padding: 0.75rem 1rem 0.75rem 1rem;
+
+    border-radius: 1rem 1rem 0 0;
+    padding: 1.5rem 1.5rem 1rem 2rem;
 
     font-family: 'Libre Baskerville', serif;
     font-size: 10pt;
@@ -47,17 +47,27 @@ ol li{
     cursor: pointer;
 }
 
+#ToC::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 80%;
+
+    margin-top: 0.25rem;
+}
+
 #ToC button{
     height: 100%;
-
+    padding-bottom: 0.5rem;
     background: rgba(0, 0, 0, 0);
 
     border-style: none;
 
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'K2D', sans-serif;
     color: white;
-    text-decoration: underline;
-    font-size: 12pt;
+    font-weight: bold;
+    font-size: 18pt;
 
     cursor: pointer;
 }
@@ -76,7 +86,15 @@ ol li{
     display: grid;
 
     .dropdown-content{
+        line-height: 250%;
         overflow: hidden;
+
+        li{
+            background-image: linear-gradient(90deg, rgb(159, 159, 159),rgba(159, 159, 159, 0));
+            background-size: 30% 1px;
+            background-repeat: no-repeat;
+            transition: all 100ms ease-out;
+        }
     }
 
     transition: grid-template-rows 150ms cubic-bezier(.88,.05,.92,1);
@@ -85,21 +103,25 @@ ol li{
 #description-container{
     height: 100%;
     background: rgb(37, 38, 41);
-    margin: 2rem 1rem 1rem 1rem;
+    margin: 0rem 0rem 1rem 0rem;
 
     overflow: auto;
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
 
-    padding: 2rem;
+    padding: 0 2rem;
     font-size: 12pt;
     font-family: 'K2D', sans-serif;
     line-height: 175%;
 
     h2{
-        margin-bottom: 2rem;
+        display: none;
     }
     p{
-        margin-bottom: 5rem;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13pt;
+        font-weight: 500;
+        line-height: 225%;
+        margin: 0.75rem 0;
     }
 }
 
@@ -116,6 +138,12 @@ ol li{
     padding: 2rem;
     padding-top: 0;
     gap: 3rem;
+
+    h4{
+        font-family: "Gujarada", serif;
+        font-size: 15pt;
+        margin: 3rem 0 3rem 0;
+    }
 }
 
 .section{
