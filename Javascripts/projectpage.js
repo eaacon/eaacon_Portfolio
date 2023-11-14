@@ -1,8 +1,10 @@
 //const tocDiv = document.querySelector('#ToC');
 const tocButton = document.querySelector('#ToC button');
 const tocContainer = document.querySelector('.dropdown-content');
-const descriptionPages = document.querySelectorAll('#description-container div')
+const descriptionPages = document.querySelectorAll('#description-container div');
 const pageHeadings = [];
+
+const imageGallery = $(".page-content img[id]");
 
 descriptionPages.forEach(element => {
     var e = element.getElementsByTagName('h2')[0];
@@ -17,10 +19,26 @@ descriptionPages.forEach(element => {
 
     tocItem.addEventListener('click', () =>{
         location.href = '#'+tocItem.innerHTML
-        SetTocLabel(tocItem.innerHTML)
     });
 
     flipToPage(0);
+});
+
+SetTocLabel(tocContainer.getElementsByTagName('li')[0].innerHTML)
+
+$(function () {
+    $(document).scroll(function() {
+        var currentId = 0;
+        $(imageGallery).each(function(i) {
+            console.log(window.scrollY + " | " + $(this).offset().top + " | " + i);
+            if(window.scrollY > ($(this).offset().top - 200)) currentId = i;
+            else {return false;}
+        });
+
+        //window.location.hash = newHash;
+        SetTocLabel(pageHeadings[currentId]);
+        flipToPage[currentId];
+    });
 });
 
 function flipToPage(i){
@@ -29,7 +47,6 @@ function flipToPage(i){
         else descriptionPages[index].style.display = "none";
     }
 }
-SetTocLabel(tocContainer.getElementsByTagName('li')[0].innerHTML)
 
 function SetTocLabel(label)
 {
