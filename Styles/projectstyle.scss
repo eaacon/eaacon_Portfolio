@@ -16,13 +16,14 @@
 }
 
 .info-bar h1{
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Fraunces', serif;
     font-size: 30pt;
     margin-bottom: 0.5rem;
 }
 
 .info-bar h4{
-    font-family: 'K2D', sans-serif;
+    color: rgb(200, 200, 200);
+    font-family: 'Gabarito', sans-serif;
     font-size: 12pt;
     font-weight: 500;
     margin-bottom: 1.5rem;
@@ -40,8 +41,8 @@ ol li{
     border-radius: 1rem 1rem 0 0;
     padding: 1.5rem 1.5rem 1rem 2rem;
 
-    font-family: 'Libre Baskerville', serif;
-    font-size: 10pt;
+    font-family: 'Fraunces', serif;
+    font-size: 12pt;
     line-height: 200%;
 
     cursor: pointer;
@@ -64,10 +65,10 @@ ol li{
 
     border-style: none;
 
-    font-family: 'K2D', sans-serif;
+    font-family: 'Fraunces', serif;
     color: white;
     font-weight: bold;
-    font-size: 18pt;
+    font-size: 20pt;
 
     cursor: pointer;
 }
@@ -110,18 +111,18 @@ ol li{
 
     padding: 0 2rem;
     font-size: 12pt;
-    font-family: 'K2D', sans-serif;
+    font-family: 'Gabarito', sans-serif;
     line-height: 175%;
 
     h2{
         display: none;
     }
     p{
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 13pt;
+        color: rgb(200, 200, 200);
+        font-size: 15pt;
         font-weight: 500;
-        line-height: 225%;
-        margin: 0.75rem 0;
+        line-height: 200%;
+        margin: 0.75rem 0 2rem 0;
     }
 }
 
@@ -138,12 +139,6 @@ ol li{
     padding: 2rem;
     padding-top: 0;
     gap: 3rem;
-
-    h4{
-        font-family: "Gujarada", serif;
-        font-size: 15pt;
-        margin: 3rem 0 3rem 0;
-    }
 }
 
 .section{
