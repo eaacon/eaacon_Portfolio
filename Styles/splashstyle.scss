@@ -11,7 +11,7 @@ header{
 // Splash Screen
 h2{
     font-family: 'Gurajada', sans-serif;
-    font-size: 3vh;
+    font-size: 22pt;
     color: rgb(151, 115, 92);
 }
 
@@ -23,6 +23,8 @@ h2{
     background-image: url("../Pieces/Concept Art/Under Strange Suns/Final_JPG.jpg");
     background-position: 60% 50%;
     background-size: cover;
+
+    cursor: pointer;
 }
 
 .backdrop{
@@ -162,7 +164,7 @@ h2{
     margin-bottom: 3rem;
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
     .tall{
         grid-row: span 2/auto;
     }
@@ -171,6 +173,20 @@ h2{
     }
 }
 
+@media (max-aspect-ratio: 4/3){
+    .project-wall{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 275px;
+    }
+
+    .eaacon{
+        width: 60vw;
+    }
+
+    h2{
+        font-size: 18pt;
+    }
+}
 //anims
 @keyframes fadeInAnimation {
     0% {

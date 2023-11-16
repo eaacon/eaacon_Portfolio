@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>illustration</title>
     
+    <script src="Javascripts/jquery.js"></script>
+    
     <link rel="stylesheet" href="Styles/navbarstyle.css">
     <link rel="stylesheet" href="Styles/portfoliostyle.css">
 
+    <script defer src = "Javascripts/gallery.js" async></script>
     <script defer src = "Javascripts/nav.js" async></script>
 </head>
 
@@ -15,23 +18,25 @@
     <div class = "navbar"></div>
 
     <ul class = "wall">
-        <li><img src="Pieces\Illustration\Path\Path.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Illustration\YOTR\NewYear2023Final.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Illustration\Cat\Cat.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Illustration\Forest Friends\FFFinal.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces/Portraits/KL.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces/Illustration/Dianne.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Illustration\Green\Green.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Illustration/Animal_Cards.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Portraits\BL2020.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Illustration\KeithRelax\KeithRelaxCover.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Illustration\Sisters\Sisters.jpg" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Illustration\Path\Path.jpg"></li>
+        <li><img src="Pieces\Illustration\YOTR\NewYear2023Final.jpg"></li>
+        <li><img src="Pieces\Illustration\Cat\Cat.jpg"></li>
+        <li><img src="Pieces\Illustration\Forest Friends\FFFinal.jpg"></li>
+        <li><img src="Pieces/Portraits/KL.jpg"></li>
+        <li><img src="Pieces/Illustration/Dianne.jpg"></li>
+        <li><img src="Pieces\Illustration\Green\Green.jpg"></li>
+        <li><img src="Pieces\Illustration/Animal_Cards.jpg"></li>
+        <li><img src="Pieces\Portraits\BL2020.jpg"></li>
+        <li><img src="Pieces\Illustration\KeithRelax\KeithRelaxCover.jpg"></li>
+        <li><img src="Pieces\Illustration\Sisters\Sisters.jpg"></li>
         <li></li>
     </ul>
 
     <div id = "modal">
-        <img id = "fullimg">
-        <span id = "close" onclick="CloseModal()">X</span>
+        <div>
+            <img id = "fullimg">
+        </div>
+        <span id = "close">X</span>
     </div>
 </body>
 </html>
