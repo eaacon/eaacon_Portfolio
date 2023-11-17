@@ -33,6 +33,7 @@ header{
 
     a:hover{
         color: #696969;
+        cursor: pointer;
     }
 }
 
@@ -86,6 +87,9 @@ a{
 }
 
 @media (max-aspect-ratio: 5/4) {   
+    .me{
+        font-size: 28pt;
+    }
     .burger{
         display: block;
     }
@@ -104,22 +108,29 @@ a{
         flex-direction: column;
         gap: 3rem;
         li{
-            font-size: 18pt;
+            font-family: "Gabarito", sans-serif;
+            font-size: 23pt;
             text-align: center;
             width: auto;
             padding: 0;
-            margin: 0;
         }
     }
-    // .nav-drop-out{
-    //     display: contents;
-    //     transition: grid-template-rows 150ms cubic-bezier(.88,.05,.92,1);
-    // }
+    .nav-drop-out{
+        display:grid;
+        position: relative;
+        transform: translate(0, 1rem);
+    }
 
-    // .nav-drop-in{
-    //     display: grid;
-    //     gap: 0.5rem;
-    //     padding: 1rem 0;
-    //     font-size: 12pt;
-    // }
+    .nav-drop-in{
+        display: grid;
+        overflow: hidden;
+        a{
+            font-family: "Gurajada", sans-serif;
+            color: rgb(189, 165, 156);
+            font-size: 25pt;
+            line-height: 150%;
+        }
+    }
+
+
 }
