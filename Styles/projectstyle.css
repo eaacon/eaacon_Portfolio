@@ -106,6 +106,10 @@ ol::after {
   line-height: 200%;
   margin: 0.75rem 0 2rem 0;
 }
+#description-container a {
+  color: rgb(130, 209, 238);
+  text-decoration: underline;
+}
 
 .project-page {
   width: 100%;

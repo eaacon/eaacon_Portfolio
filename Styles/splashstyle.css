@@ -152,7 +152,7 @@ h2 {
   margin-bottom: 3rem;
 }
 
-@media (min-width: 600px) {
+@media (min-aspect-ratio: 2/1) {
   .tall {
     grid-row: span 2/auto;
   }
@@ -164,6 +164,10 @@ h2 {
   .project-wall {
     grid-template-columns: 1fr;
     grid-auto-rows: 275px;
+  }
+  .project-wall h3 {
+    font-size: 25pt;
+    line-height: 100%;
   }
   .eaacon {
     width: 60vw;
