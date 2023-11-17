@@ -19,4 +19,4 @@ hiddenElements.forEach((element) => {
     observer.observe(element)
 });
 
-const splash = document.querySelector('#splash');
+$(".hidden")
