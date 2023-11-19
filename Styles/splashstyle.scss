@@ -16,7 +16,7 @@ h2{
 }
 
 #splash {
-    z-index: 0;
+    z-index: -10;
     height: 100vh;
     width: 100%;
     background-color: rgb(29, 32, 35);
@@ -29,7 +29,7 @@ h2{
 
 .backdrop{
     height: 100vh;
-    background-color: rgb(46, 41, 41);
+    background-color: rgb(29, 32, 35);
     mix-blend-mode: multiply;
     animation: fadeInAnimation ease-out 2s;
     animation-fill-mode: forwards;
@@ -173,7 +173,7 @@ h2{
     }
 }
 
-@media (max-aspect-ratio: 4/3){
+@media (max-width: 800px){
     .to-projects{
         bottom: -5%;
     }
@@ -196,6 +196,14 @@ h2{
         font-size: 18pt;
     }
 }
+
+@media (max-height: 450px){
+    .to-projects {
+      left: 10%;
+      bottom: 0%;
+    }
+}
+
 //anims
 @keyframes fadeInAnimation {
     0% {
