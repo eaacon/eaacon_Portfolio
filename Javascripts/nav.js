@@ -5,7 +5,7 @@ fetch("/navbar.html")
 .then(data=>{
     nav.innerHTML = data;
 
-    $(".collection").on("click", function(){
+    $(".collection").on("click", function(){        
         var navdd = $(this).children(".nav-drop-out");
 
         if($(navdd).css("grid-template-rows") == "0px")
@@ -17,9 +17,11 @@ fetch("/navbar.html")
     });
 
     $(".collection").hover(function(){
+        if(window.matchMedia('(max-width: 800px)').matches) return;
         var navdd = $(this).children(".nav-drop-out");
         $(navdd).css("grid-template-rows", "1fr");
     }, function(){
+        if(window.matchMedia('(max-width: 800px)').matches) return;
         var navdd = $(this).children(".nav-drop-out");
         $(navdd).css("grid-template-rows", "0fr");
     });
@@ -32,3 +34,14 @@ fetch("/navbar.html")
         }
     });
 })
+
+$( window ).on( "resize", function(){
+    if(window.matchMedia('(min-width: 800px)').matches){
+        $("nav").css("display", 'block');
+    }else{
+        $("nav").css("display", 'none');
+    }
+});
+
+
+

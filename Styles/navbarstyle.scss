@@ -86,9 +86,27 @@ a{
     height: 3rem;
 }
 
-@media (max-aspect-ratio: 5/4) {   
+@media (max-width: 1100px){
     .me{
-        font-size: 28pt;
+        font-size: 20pt;
+    }
+    .nav-links li{
+        padding: 0 0.5rem;
+        font-size: 16px;
+    }
+    .nav-drop-in a{
+        font-size: 10pt;
+    }
+
+    header{
+        padding: 1.25rem;;
+    }
+}
+
+
+@media (max-width: 800px) {   
+    .me{
+        font-size: 25pt;
     }
     .burger{
         display: block;
@@ -131,6 +149,4 @@ a{
             line-height: 150%;
         }
     }
-
-
 }
