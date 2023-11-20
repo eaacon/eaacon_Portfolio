@@ -14,32 +14,34 @@
 
     <script src="Javascripts/jquery.js"></script>
     <script defer src = "Javascripts/gallery.js" async></script>
-    <script src = "Javascripts/nav.js" async></script>
+    <script defer src = "Javascripts/nav.js" async></script>
 </head>
 
 <body>
     <div class = "navbar"></div>
 
     <ul class = "wall">
-        <li><img src="Pieces\Sketches\ManFig.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Sketches\Stop Sign.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Sketches\ML750s.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Sketches\VWjetta.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Sketches\Apple2.png" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Sketches\Ribeye.png" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces/Sketches/R.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Sketches\G.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Sketches\B.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Sketches\Trees.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Sketches\Church.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Sketches\Mtns.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Sketches\foodsketches.jpg" onclick="Fullview(this.src)"></li>
-        <li><img src="Pieces\Sketches\Orlando.jpg" onclick="Fullview(this.src)"></li>
+        <li><img src="Pieces\Sketches\ManFig.jpg"></li>
+        <li><img src="Pieces\Sketches\Stop Sign.jpg"></li>
+        <li><img src="Pieces\Sketches\ML750s.jpg"></li>
+        <li><img src="Pieces\Sketches\VWjetta.jpg"></li>
+        <li><img src="Pieces\Sketches\Apple2.png"></li>
+        <li><img src="Pieces\Sketches\Ribeye.png"></li>
+        <li><img src="Pieces/Sketches/R.jpg"></li>
+        <li><img src="Pieces\Sketches\G.jpg"></li>
+        <li><img src="Pieces\Sketches\B.jpg"></li>
+        <li><img src="Pieces\Sketches\Trees.jpg"></li>
+        <li><img src="Pieces\Sketches\Church.jpg"></li>
+        <li><img src="Pieces\Sketches\Mtns.jpg"></li>
+        <li><img src="Pieces\Sketches\foodsketches.jpg"></li>
+        <li><img src="Pieces\Sketches\Orlando.jpg"></li>
         <li></li>
     </ul>
 
     <div id = "modal">
-        <img id = "fullimg">
+        <div>
+            <img id = "fullimg">
+        </div>
         <span id = "close" onclick="CloseModal()">X</span>
     </div>
 
