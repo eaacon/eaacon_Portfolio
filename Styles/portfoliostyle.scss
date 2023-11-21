@@ -36,7 +36,23 @@
 }
 
 .modal-assets{
-    display: none;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+
+    padding: 3rem;
+    padding-bottom: 5rem;
+    li{
+        max-width: 85vw;
+
+        display: grid;
+        justify-items: center;
+        gap: 2rem;
+        img{
+            max-height: 80vh;
+        }
+    }
 }
 
 #modal{
@@ -48,20 +64,6 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.8);
-
-    div{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-}
-
-#fullimg{
-    max-width: 85vw;
-    max-height: 85vh;
 }
 
 #close{
