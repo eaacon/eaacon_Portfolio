@@ -1,7 +1,7 @@
 header{
     z-index: 1;
 
-    animation: navFade ease-out 3s;
+    animation: fadeIn ease-out 2s;
     animation-fill-mode: forwards;
 
     position: absolute;
@@ -12,7 +12,7 @@ header{
 h2{
     font-family: 'Gurajada', sans-serif;
     font-size: 22pt;
-    color: rgb(151, 115, 92);
+    //color: rgb(151, 115, 92);
 }
 
 #splash {
@@ -20,7 +20,6 @@ h2{
     height: 100vh;
     width: 100%;
     background-color: rgb(29, 32, 35);
-    background-image: url("../Pieces/Concept Art/Under Strange Suns/Final_JPG.jpg");
     background-position: 60% 50%;
     background-size: cover;
 
@@ -29,9 +28,9 @@ h2{
 
 .backdrop{
     height: 100vh;
-    background-color: rgb(29, 32, 35);
-    mix-blend-mode: multiply;
-    animation: fadeInAnimation ease-out 2s;
+    background-color: rgb(21, 21, 22);
+    mix-blend-mode: normal;
+    animation: BDfade ease-out 1.5s;
     animation-fill-mode: forwards;
 }
 
@@ -49,7 +48,8 @@ h2{
 
 .eaacon{
     width: 25vw;
-    filter: invert(48%) sepia(3%) saturate(3489%) hue-rotate(17deg) brightness(108%) contrast(104%);
+    //filter: invert(48%) sepia(3%) saturate(3489%) hue-rotate(17deg) brightness(108%) contrast(104%);
+    filter: invert(100%);
 }
 
 .dodge{  
@@ -205,22 +205,22 @@ h2{
 }
 
 //anims
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 100%;
-    }
-    100% {
-        opacity: 35%;
-     }
-}
-
-@keyframes navFade {
+@keyframes fadeIn {
     0% {
         opacity: 0%;
     }
     100% {
         opacity: 100%;
      }
+}
+
+@keyframes BDfade{
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 38%;
+    }
 }
 
 @keyframes arrowAnim{
