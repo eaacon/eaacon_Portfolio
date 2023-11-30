@@ -9,6 +9,7 @@ header {
 h2 {
   font-family: "Gurajada", sans-serif;
   font-size: 22pt;
+  opacity: 70%;
 }
 
 #splash {
@@ -107,13 +108,16 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.project-wall a h3 {
+  opacity: 100%;
+}
 
 .project-wall a:hover {
   transition: all 500ms;
   background: rgba(0, 0, 0, 0);
 }
 .project-wall a:hover h3 {
-  transition: all 150ms;
+  transition: all 100ms;
   opacity: 0;
 }
 
@@ -159,6 +163,9 @@ h2 {
   }
 }
 @media (max-width: 800px) {
+  .label {
+    top: 50%;
+  }
   .to-projects {
     bottom: -5%;
   }

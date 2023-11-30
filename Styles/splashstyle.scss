@@ -12,7 +12,7 @@ header{
 h2{
     font-family: 'Gurajada', sans-serif;
     font-size: 22pt;
-    //color: rgb(151, 115, 92);
+    opacity: 70%;
 }
 
 #splash {
@@ -48,7 +48,6 @@ h2{
 
 .eaacon{
     width: 25vw;
-    //filter: invert(48%) sepia(3%) saturate(3489%) hue-rotate(17deg) brightness(108%) contrast(104%);
     filter: invert(100%);
 }
 
@@ -115,6 +114,10 @@ h2{
 
     justify-content: center;
     align-items: center;
+
+    h3{
+        opacity: 100%;
+    }
 }
 
 .project-wall a:hover{
@@ -122,7 +125,7 @@ h2{
     background: rgba(0, 0, 0, 0);
     
     h3{
-        transition: all 150ms;
+        transition: all 100ms;
         opacity: 0;
     }
 }
@@ -174,6 +177,9 @@ h2{
 }
 
 @media (max-width: 800px){
+    .label{
+        top: 50%;
+    }
     .to-projects{
         bottom: -5%;
     }
