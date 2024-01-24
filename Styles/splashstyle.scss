@@ -81,8 +81,8 @@ h2{
  
 .project-wall{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-auto-rows: 350px;
+    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    grid-auto-rows: 400px;
     gap: 1.5rem;
     padding: 2rem;
 }
@@ -103,7 +103,6 @@ h2{
 .project-wall li:hover{
     margin: -0.5%;
 }
-
 
 .project-wall a{
     display: flex;
