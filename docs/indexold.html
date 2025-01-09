@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eaacon</title>
+
+    <link rel="stylesheet" href="Styles/navbarstyle.css">
+    <link rel="stylesheet" href="Styles/splashstyle.css">
+
+    <script src="Javascripts/jquery.js"></script>
+
+    <script defer src="Javascripts/splash.js" async></script>
+    <script defer src = "Javascripts/nav.js" async></script>
+</head>
+<body>
+    <div class = "navbar"></div>
+
+    <div id = "splash" style='background-image: url("Pieces/Development/CobaltCure/Emma_Splash.jpg");'>
+        <div class = "backdrop"></div>
+        <div class="label">
+            <img src="Images\SVG\eaaconLogo.svg" class = "eaacon">   
+            <h2>artist | developer</h2>
+        </div>
+        <a href="#projects" class = "to-projects">
+            <img src="Images/SVG/Arrow.svg" id = "arrow1">
+            <img src="Images/SVG/Arrow.svg" id = "arrow2">
+        </a>
+    </div> 
+
+    <div id = "projects">
+        <ul class = "project-wall">
+            <li> 
+                <div style="background-image: url('Pieces/Development/CobaltCure/Emma.jpg');">
+                    <a href="cobaltcure.html">
+                        <h3>Cobalt Cure</h3>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div style = "background-image: url('Pieces/Development/Neuma/Icon.jpg');">
+                    <a href="neuma.html">
+                        <h3>Neuma</h3>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div style="background-image: url('Pieces/Concept Art/Under Strange Suns/Final_JPG.jpg');">
+                    <a href="uss.html">
+                        <h3>Under Strange Suns</h3>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div style = "background-image: url('Pieces/Concept Art/Akua/Akua_Concept.jpg');">
+                    <a href="akua.html">
+                        <h3>Akua</h3>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div style = "background-image: url('Pieces/3D/Jess_Key.jpg');">
+                    <a href="jess.html">
+                        <h3>Jess</h3>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div style="background-image: url('Pieces/Misc/Gamepi_Key.jpg');">
+                    <a href="gamepi.html">
+                        <h3>Game Pi</h3>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div style = "background-image: url('Pieces/Development/USPS/USPS_Thumb.jpg');">
+                    <a href="usps.html">
+                        <h3>United Snails Postal Service</h3>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <a href="#splash" id = "back"><img src="Images/SVG/Arrow.svg" id = "arrow2"></a>
+</body>
+</html>
