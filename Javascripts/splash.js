@@ -1,7 +1,7 @@
 const hiddenElements = document.querySelectorAll('.hidden')
 
 $("#splash").on('click', function(){
-    $(location).attr('href', '../index.html#projects');
+    $(location).attr('href', '../docs/index.html#projects');
 });
 
     // const observer = new IntersectionObserver((entries) => {
