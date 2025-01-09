@@ -1,6 +1,6 @@
 const nav = document.querySelector('.navbar')
 
-fetch("../docs/navbar.html")
+fetch("/docs/navbar.html")
 .then(res=>res.text())
 .then(data=>{
     nav.innerHTML = data;
