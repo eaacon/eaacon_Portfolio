@@ -16,19 +16,26 @@ html {
 }
 
 header {
+  z-index: 100;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
   padding-bottom: 1rem;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
 }
 
 .nav-links li {
   display: inline-block;
   padding: 0 1rem;
   color: #e9e9e9;
-  font-family: "Gabarito", sans-serif;
-  font-size: 13pt;
+  font-family: "loos-normal", sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 1.25 rem;
 }
 .nav-links li a:hover {
   color: #bcbcbc;
@@ -67,7 +74,7 @@ a {
 
 .me {
   font-family: "Libre Baskerville", serif;
-  font-size: 30pt;
+  font-size: 2.5rem;
   margin-right: auto;
 }
 
@@ -88,7 +95,7 @@ a {
 
 @media (max-width: 1100px) {
   .me {
-    font-size: 18pt;
+    font-size: 2rem;
   }
   .nav-links li {
     padding: 0 0.5rem;
@@ -98,12 +105,12 @@ a {
     font-size: 10pt;
   }
   header {
-    padding: 1.25rem;
+    padding: 1rem;
   }
 }
 @media (max-width: 800px) {
   .me {
-    font-size: 25pt;
+    font-size: 2rem;
   }
   .burger {
     display: block;
