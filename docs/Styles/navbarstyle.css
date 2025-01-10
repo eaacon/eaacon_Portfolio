@@ -36,7 +36,7 @@ header {
   color: #e9e9e9;
   font-family: "loos-normal", sans-serif;
   letter-spacing: 0.1rem;
-  font-size: 1.25 rem;
+  font-size: 1.4rem;
 }
 .nav-links li a:hover {
   color: rgb(10, 10, 20);
@@ -64,7 +64,7 @@ a {
   overflow: hidden;
 }
 .nav-drop-in a {
-  font-size: 12pt;
+  font-size: 1.1rem;
   padding: 0.75rem 1rem;
 }
 
@@ -95,10 +95,10 @@ a {
   }
   .nav-links li {
     padding: 0 0.5rem;
-    font-size: 16px;
+    font-size: 1.35rem;
   }
   .nav-drop-in a {
-    font-size: 10pt;
+    font-size: 1rem;
   }
   header {
     padding: 1rem;
@@ -106,7 +106,7 @@ a {
 }
 @media (max-width: 800px) {
   .me {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   .burger {
     display: block;
@@ -127,7 +127,7 @@ a {
   }
   .nav-links li {
     font-family: "Gabarito", sans-serif;
-    font-size: 23pt;
+    font-size: 1.3rem;
     text-align: center;
     width: auto;
     padding: 0;

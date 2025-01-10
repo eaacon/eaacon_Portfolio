@@ -10,7 +10,7 @@ header {
   z-index: 0;
   height: 100vh;
   width: 100%;
-  background-image: url("../Pieces/Painting/SmallBW.jpg");
+  background: rgb(38, 39, 40);
   background-position: 50% 40%;
   background-size: 350%;
 }
@@ -25,10 +25,10 @@ header {
 
 .socials {
   background-color: rgb(19, 19, 19);
-  width: 50%;
+  width: 100%;
   border-radius: 1rem;
   line-height: 3rem;
-  padding: 2rem;
+  padding: 1rem;
   display: grid;
   justify-items: center;
   text-align: left;
@@ -49,12 +49,12 @@ header {
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  grid-template-rows: 5fr 1fr;
+  gap: 1rem;
 }
 
 .contact-form {
-  width: 80%;
+  width: 40%;
   height: 100%;
   display: grid;
   align-items: center;
