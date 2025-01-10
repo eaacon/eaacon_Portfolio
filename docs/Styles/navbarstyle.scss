@@ -28,6 +28,7 @@ header{
 .container{
     position: absolute;
     width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.667),30% , rgba(0,0,0,0));
 }
 
 .nav-links li{
@@ -39,14 +40,9 @@ header{
     font-size: 1.25 rem;
 
     a:hover{
-        color: #bcbcbc;
+        color: rgb(10, 10, 20);
         cursor: pointer;
     }
-}
-
-.nav-links li:hover{
-    color: #bcbcbc;
-    cursor: pointer;
 }
 
 a{
@@ -102,7 +98,7 @@ a{
 }
 
 .me:hover{
-    color: #bcbcbc;
+    color: rgb(10, 10, 20);
 }
 
 .burger{
