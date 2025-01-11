@@ -24,18 +24,20 @@ html{
 header{
     display: flex;
     align-items: center;
-    padding: 1vw 2vw 1vw 2vw;
+    padding: 1rem max(2vw, 1.5rem) 1rem max(2vw, 1.5rem);
 }
 
 .nav-links li{
     display: inline-block;
-    vertical-align: super;
     padding: 0 1rem;
     font-family: 'loos-normal', sans-serif;
     letter-spacing: .15vw;
-    font-size: 1.2vw;
+    font-size: clamp(1.5rem, .5rem + 1vw, 3rem);
     &:hover{
         cursor: pointer;
+    }
+    a{
+        vertical-align: bottom;
     }
 }
 
@@ -45,7 +47,6 @@ a{
     vertical-align: bottom;
     &:hover{
         color: rgba(215, 215, 215, 0.5);
-        mix-blend-mode: color-dodge;
     }
 }
 
@@ -73,7 +74,7 @@ a{
 
 .me{
     font-family: 'all-round-gothic', serif;
-    font-size: 3vw;
+    font-size: clamp(3rem, 2rem + 1.25vw, 6rem);
 
     margin-right: auto; 
 

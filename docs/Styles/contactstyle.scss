@@ -8,31 +8,28 @@ header{
     width: 100%;
 }
 
-.backdrop{
-    display: none;
-}
-
-.mult{
-    display: none;
+.contact-info{
+    width: 100%;
+    height: 100dvh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .socials{
-    width: 100%;
     border-radius: 1rem;
-    line-height: 3rem;
+    line-height: 2rem;
     padding: 1rem;
-    display: grid;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
-    text-align: left;
-    gap: 1rem;
-    font-family: "Gabarito", sans-serif;
-    
-    img{
-        width: 100%;
-    }
+    text-align: center;
+    gap: 2rem;
+    font-family: "loss-normal", sans-serif;
 }
 
-.contact-body{
+/* .contact-body{
     width: 100%;
     height: 100%;
     padding: 5% 5% 0;
@@ -67,7 +64,7 @@ form{
 .contact-title{
     font-family: 'all-round-gothic', sans-serif;
 
-    font-size: 2vw;
+    font-size: clamp(2rem, 2vw, 5rem);
     color: white;
 }
 
@@ -121,4 +118,4 @@ form button{
     100% {
         opacity: 35%;
      }
-}
+} */
