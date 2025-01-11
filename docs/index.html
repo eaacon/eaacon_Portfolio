@@ -17,17 +17,22 @@
 <body>
     <!-- <div style = "height: 100vh; text-align:center; align-content: center;"><h1>Under Construction!</h1></div> -->
     <div class = "navbar"></div>
-    <!-- <div class = "modal">
-        <div class = "page-content">
-            <div class = "section" style = "padding-top: 0;">
-                <iframe width="1920" height="1080" src="https://www.youtube.com/embed/j-KO_elnDqA?si=o903xCNLEg8VYSoR"" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <div class = "modal">
+        <div class = "modal-bg">
+            <div class = "embed">
+                <iframe src="https://www.youtube.com/embed/j-KO_elnDqA?si=o903xCNLEg8VYSoR"" title="eaacon VFX Portfolio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
             </div>
+            <img src="Images/SVG/X.svg" alt="Close Youtube Popup" id="closevideo">
         </div>
-    </div> -->
-    <div class = "hero">
+    </div>
+
+    <div class = "hero" id="openvideo">
         <h1>VFX PORTFOLIO</h1>
         <video class = "backdropvideo" autoplay muted loop>
             <source src = "Videos/VFX_Portfolio_Highlights_3000.mp4" type="video/mp4">
+            <source src = "Videos/VFX_Portfolio_Highlights_2000.webm" type="video/webm">
         </video>
     </div>
 </body>

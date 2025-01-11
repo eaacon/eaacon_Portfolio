@@ -9,24 +9,14 @@ header{
 }
 
 .backdrop{
-    z-index: 0;
-    height: 100vh;
-    width: 100%;
-    background: rgb(38, 39, 40);
-    background-position: 50% 40%;
-    background-size: 350%;
+    display: none;
 }
 
 .mult{
-    height: 100vh;
-    background-color: rgb(46, 41, 41);
-    mix-blend-mode: multiply;
-    animation: fadeInAnimation ease-out 2s;
-    animation-fill-mode: forwards;
+    display: none;
 }
 
 .socials{
-    background-color: rgb(19, 19, 19);
     width: 100%;
     border-radius: 1rem;
     line-height: 3rem;
@@ -59,8 +49,8 @@ header{
 }
 
 .contact-form{
-    width: 40%;
-    height: 100%;
+    width: auto;
+    height: auto;
     display: grid;
     align-items: center;
     overflow: auto;
@@ -71,38 +61,34 @@ form{
     flex-direction: column;
     align-items: start;
 
-    padding: 1% 8% 7%;
     border-radius: 1rem;
-    background-color: rgb(19, 19, 19);
 }
 
 .contact-title{
-    font-family: 'Gurajada', sans-serif;
+    font-family: 'all-round-gothic', sans-serif;
 
-    font-size: 40pt;
+    font-size: 3rem;
     color: white;
-
-    margin-bottom: -3%;
 }
 
 input, textarea{
     width: 100%;
-    padding: 2%;
+    padding: .75rem;
     border-radius: 0.25rem;
     border-style: none;
 
-    font-family: 'Gabarito', sans-serif;
-    font-size: 12pt;
+    font-family: 'loos-normal', sans-serif;
+    font-size: 1rem;
 }
 
 input{
-    margin: 2% 0;
+    margin: 1% 0;
 }
 
 textarea{
-    margin-top: 3%;
+    margin-top: 1%;
     max-width: 100%;
-    line-height: 1.5;
+    line-height: 1rem;
 }
 
 .submission{
@@ -111,7 +97,7 @@ textarea{
 
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     place-items: center;
     gap: 3%;
 }
@@ -121,10 +107,11 @@ textarea{
 }
 
 form button{
-    padding: 1.5rem 3rem;
+    padding: .75rem 2rem;
     border-style: none;
-    border-radius: 1.75rem;
-    font-size: 13pt;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    font-family: 'loos-normal', sans-serif;
 }
 
 @keyframes fadeInAnimation {
