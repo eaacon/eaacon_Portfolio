@@ -13,8 +13,8 @@
 h1 {
   font-family: "all-round-gothic";
   font-weight: 700;
-  font-size: 5rem;
-  letter-spacing: 2rem;
+  font-size: 6vw;
+  letter-spacing: 2vw;
   color: rgba(179, 177, 175, 0.9);
   mix-blend-mode: color-dodge;
   -webkit-user-select: none;

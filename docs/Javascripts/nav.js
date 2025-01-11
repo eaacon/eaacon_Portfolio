@@ -28,9 +28,9 @@ fetch("navbar.html")
 
     $(".burger").click(function(){
         if($("nav").css("display") == "none"){
-            $("nav").css("display", 'block');
+            $("nav").slideDown(100);
         }else{
-            $("nav").css("display", 'none');
+            $("nav").slideUp(100);
         }
     });
 })
