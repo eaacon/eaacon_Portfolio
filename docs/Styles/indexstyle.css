@@ -16,8 +16,6 @@
   left: 6vw;
   height: 16vw;
   transform: rotate(-90deg);
-  color: rgba(196, 211, 218, 0.8);
-  mix-blend-mode: color-dodge;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;

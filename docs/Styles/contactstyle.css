@@ -12,6 +12,7 @@ header {
   display: grid;
   justify-content: center;
   align-items: center;
+  background: rgb(21, 21, 22);
 }
 
 .panel {
@@ -24,6 +25,7 @@ header {
      -moz-user-select: none;
           user-select: none;
   pointer-events: none;
+  color: rgba(221, 221, 221, 0.8666666667);
 }
 .panel h2 {
   font-size: 2vw;
@@ -34,6 +36,7 @@ header {
 }
 .panel h1 {
   display: inline-block;
+  color: white;
   font-family: "span", serif;
   font-size: 4vw;
   padding-left: 1rem;
@@ -60,6 +63,7 @@ header {
 }
 .panel .mail:hover {
   transform: translateZ(60px) scale(1.03);
+  color: white;
 }
 .panel .mail img {
   height: 3.5vw;
@@ -109,7 +113,7 @@ header {
   filter: invert(24%) sepia(34%) saturate(5960%) hue-rotate(198deg) brightness(96%) contrast(92%);
 }
 .socials img {
-  filter: invert(80%);
+  filter: invert(70%);
   position: relative;
   height: 3vw;
 }
