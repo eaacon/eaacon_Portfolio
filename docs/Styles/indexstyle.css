@@ -147,6 +147,9 @@ iframe {
     width: 0%;
     left: 50%;
   }
+  .hero:hover .tooltip {
+    display: none;
+  }
   .embed {
     max-width: 95%;
   }

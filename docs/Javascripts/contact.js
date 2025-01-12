@@ -23,10 +23,10 @@ $(document).ready(function(){
     }
 
     $(".mail").on("click", function(){
-        $('.tooltip').text("e-mail copied!");
+        $('#address').text("e-mail copied!");
         setTimeout(() => {
-            $('.tooltip').text("click to copy!")
-        }, 2500);
+            $('#address').text("andrewgychen@gmail.com")
+        }, 2000);
     });
 
     $(document).on('mousemove', function(e){

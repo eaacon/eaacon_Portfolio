@@ -146,6 +146,9 @@ iframe{
                 left: 50%; 
             }
         }
+        &:hover .tooltip{
+            display: none;
+        }
     }
 
     .embed{
