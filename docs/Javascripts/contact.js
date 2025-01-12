@@ -18,15 +18,23 @@ $(document).ready(function(){
         $('.mail').hover(function(){
             $('.tooltip').fadeIn(100);
         }, function(){
-            $('.tooltip').fadeOut(200);
+            $('.tooltip').fadeOut(100);
         });
     }
 
     $(".mail").on("click", function(){
-        $('#address').text("e-mail copied!");
-        setTimeout(() => {
-            $('#address').text("andrewgychen@gmail.com")
-        }, 2000);
+        if ($('.mobile-sensor').css("position") != "absolute"){
+            $('.tooltip').text("e-mail copied!");
+            setTimeout(() => {
+                $('.tooltip').text("click to copy!")
+            }, 2000);
+        }
+        else{
+            $('#address').text("e-mail copied!");
+            setTimeout(() => {
+                $('#address').text("andrewgychen@gmail.com")
+            }, 2000);
+        }
     });
 
     $(document).on('mousemove', function(e){

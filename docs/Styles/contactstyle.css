@@ -243,6 +243,7 @@ form button{
   }
   .panel .mail img {
     height: 3.5vh;
+    filter: brightness(200);
   }
   .socials {
     margin-top: 1vh;
