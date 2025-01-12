@@ -24,7 +24,7 @@ html {
 header {
   display: flex;
   align-items: center;
-  padding: 1rem max(2vw, 1.5rem) 1rem max(2vw, 1.5rem);
+  padding: max(2vw, 1.5rem) max(2vw, 1.5rem) 3rem max(2vw, 1.5rem);
 }
 
 .nav-links li {
@@ -32,7 +32,7 @@ header {
   padding: 1rem 1rem;
   font-family: "loos-normal", sans-serif;
   letter-spacing: 0.15vw;
-  font-size: clamp(1.5rem, 0.5rem + 1vw, 3rem);
+  font-size: clamp(1.5rem, 1.5rem + 1vw, 4rem);
 }
 
 header a {
@@ -78,7 +78,7 @@ header a:hover:after {
 .me {
   position: relative;
   font-family: "all-round-gothic", serif;
-  font-size: clamp(3rem, 2rem + 1.25vw, 6rem);
+  font-size: clamp(3rem, 1.5rem + 2.5vw, 8rem);
   margin-right: auto;
 }
 .me:after {
@@ -94,7 +94,7 @@ header a:hover:after {
 .burger {
   z-index: 30;
   display: none;
-  height: 3rem;
+  height: 7vh;
 }
 .burger:hover {
   filter: brightness(75%);
@@ -114,7 +114,7 @@ header a:hover:after {
     right: 0;
     top: 0;
     width: 100%;
-    padding: 5rem 2rem 2rem 2rem;
+    padding: 8vh 2vh 2vh 2vh;
     border-radius: 0 0 1vh 1vh;
     background-color: rgb(19, 19, 19);
   }

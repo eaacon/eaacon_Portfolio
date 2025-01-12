@@ -63,7 +63,7 @@ h1{
 }
 
 .blur{
-    filter: blur(30px);
+    filter: blur(15px);
 }
 .modal{
     display: none;
@@ -106,13 +106,15 @@ iframe{
 
 .tooltip{
     display: none;
-    background: rgb(19, 19, 19);
-    padding: 1rem;
+    background: rgba(19, 19, 19, .9);
+    color: white;
+    padding: .5vw .8vw .5vw .8vw;
     position: absolute;
     z-index: 100;
     font-family: "all-round-gothic";
-    font-size: 1.25rem;
-    border-radius: 1rem;
+    font-size: 1vw;
+    border-radius: .5vw;
+    border-top-left-radius: 0;
 }
 
 @media (max-aspect-ratio: 16/9) {
@@ -137,6 +139,10 @@ iframe{
             padding: 1rem;
             font-size: 13vw;
             letter-spacing: 2.2vw;
+
+            color: rgb(255, 255, 255);
+            mix-blend-mode: normal;
+
             &:hover:after { 
                 width: 0%; 
                 left: 50%; 

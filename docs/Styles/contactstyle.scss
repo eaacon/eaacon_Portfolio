@@ -19,8 +19,14 @@ header{
 .panel{
     font-family: "loos-normal";
     
+    padding: 5vw;
     transform-style: preserve-3d;
-
+    
+    h2, h3, h1, img{
+        user-select: none;
+        pointer-events: none;
+    }
+    
     h2{
         font-size: 2vw;
     }
@@ -30,9 +36,11 @@ header{
     }
     h1{
         display: inline-block;
-        font-family:"loos-normal";
+        font-family: "span", serif;
         font-size: 4vw;
         padding-left: 1rem;
+
+        text-shadow: -8px 8px 3px rgba(0, 0, 0, 0.7);
 
         transform: translateZ(5px);
     }
@@ -46,16 +54,38 @@ header{
         display: flex;
         align-items: center;
         gap: 1vw;
-        padding: 1vw 0 1vw 0;
+        padding: .5vw 1vw .5vw 1vw;
+        margin: .5vw 0 2vw 0;
+        border-radius: 1vw;
         font-size: 2vw;
 
-        transform: translateZ(25px);
+        box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.7);
+
+        transform: translateZ(20px);
+
+        &:hover{
+            transform: translateZ(60px) scale(1.03);
+        } 
+        transition: transform .3s;
 
         img{
             height: 3.5vw;
         }
     }
     
+}
+
+.tooltip{
+    display: none;
+    background: rgb(19, 19, 19);
+    padding: .5vw .8vw .5vw .8vw;
+    position: absolute;
+    z-index: 100;
+    font-family: "all-round-gothic";
+    font-size: 1vw;
+    border-radius: .5vw;
+    border-top-left-radius: 0;
+    box-shadow: -15px 15px 20px rgba(0, 0, 0, 0.4);
 }
 
 .socials{
@@ -65,13 +95,41 @@ header{
     gap: 1rem;
     font-family: "loss-normal", sans-serif;
 
-    transform: translateZ(5px);
+    transform-style: preserve-3d;
+
+    a{
+        transform: translateZ(5px);
+        &:hover{
+            transform: translateZ(40px) scale(1.1);
+            #yt{
+                filter: invert(17%) sepia(85%) saturate(5847%) hue-rotate(341deg) brightness(97%) contrast(115%);
+            }
+            #x{
+                filter: invert(47%) sepia(96%) saturate(2432%) hue-rotate(179deg) brightness(100%) contrast(83%);
+            }
+            #as{
+                filter: invert(41%) sepia(98%) saturate(441%) hue-rotate(152deg) brightness(116%) contrast(97%);
+            }
+            #is{
+                filter: invert(17%) sepia(100%) saturate(3221%) hue-rotate(302deg) brightness(112%) contrast(126%);
+            }
+            #li{
+                filter: invert(24%) sepia(34%) saturate(5960%) hue-rotate(198deg) brightness(96%) contrast(92%);
+            }
+        } 
+        transition: transform .3s;
+    }
 
     img{
         filter: invert(80%);
         position: relative;
-        height: 2.5vw;
+        height: 3vw;
     }
+}
+
+.mobile-sensor{
+    display: none;
+    position: relative;
 }
 
 /* .contact-body{
@@ -166,7 +224,12 @@ form button{
 } */
 
 @media (max-aspect-ratio: 4/5) {
+    .mobile-sensor{
+        display: none;
+        position: absolute;
+    }
     .panel{
+        scale: 1.2;
         h2{
             font-size: 3vh;
         }
@@ -182,7 +245,7 @@ form button{
             line-height: 4vh;
         }
         .mail{
-            margin-left: -.5vh;
+            margin-left: -.5vw;
             gap: 1vw;
             padding: 2vw 0 2vw 0;
             font-size: 2.25vh;
