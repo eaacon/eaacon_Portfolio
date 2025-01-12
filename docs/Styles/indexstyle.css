@@ -9,17 +9,50 @@
   background: rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
+.hero img {
+  display: none;
+  position: relative;
+  top: 3.5vw;
+  left: 6vw;
+  height: 16vw;
+  transform: rotate(-90deg);
+  color: rgba(196, 211, 218, 0.8);
+  mix-blend-mode: color-dodge;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.hero:hover .tooltip {
+  display: block;
+}
 
 h1 {
   font-family: "all-round-gothic";
   font-weight: 700;
   font-size: 6vw;
   letter-spacing: 2vw;
-  color: rgba(179, 177, 175, 0.9);
+  color: rgba(213, 229, 236, 0.9);
   mix-blend-mode: color-dodge;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  cursor: pointer;
+}
+h1:after {
+  content: "";
+  display: block;
+  height: 1vh;
+  left: 50%;
+  position: absolute;
+  background: rgba(213, 229, 236, 0.9);
+  mix-blend-mode: color-dodge;
+  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  width: 0;
+}
+h1:hover:after {
+  width: 74%;
+  left: 12%;
 }
 
 .backdropvideo {
@@ -30,6 +63,10 @@ h1 {
   transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
+}
+
+.blur {
+  filter: blur(30px);
 }
 
 .modal {
@@ -63,12 +100,22 @@ h1 {
   height: 100%;
   max-width: 75%;
   max-height: 80%;
-  box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.5);
 }
 
 iframe {
   width: 100%;
   height: 100%;
+}
+
+.tooltip {
+  display: none;
+  background: rgb(19, 19, 19);
+  padding: 1rem;
+  position: absolute;
+  z-index: 100;
+  font-family: "all-round-gothic";
+  font-size: 1.25rem;
+  border-radius: 1rem;
 }
 
 @media (max-aspect-ratio: 16/9) {
@@ -78,5 +125,27 @@ iframe {
     height: auto;
     max-width: 90%;
     max-height: 90%;
+  }
+}
+@media (max-aspect-ratio: 4/5) {
+  .hero {
+    justify-content: right;
+    align-items: end;
+    text-align: right;
+  }
+  .hero img {
+    display: inline-block;
+  }
+  .hero h1 {
+    padding: 1rem;
+    font-size: 13vw;
+    letter-spacing: 2.2vw;
+  }
+  .hero h1:hover:after {
+    width: 0%;
+    left: 50%;
+  }
+  .embed {
+    max-width: 95%;
   }
 }/*# sourceMappingURL=indexstyle.css.map */
