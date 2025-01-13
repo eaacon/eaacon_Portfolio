@@ -1,11 +1,3 @@
-header {
-  z-index: 1;
-  animation: navFade ease-out 3s;
-  animation-fill-mode: forwards;
-  position: absolute;
-  width: 100%;
-}
-
 .contact {
   width: 100%;
   height: 100dvh;

@@ -6,7 +6,7 @@ $(document).ready(function(){
     .then(data=>{
         nav.innerHTML = data;
 
-        $(".collection").on("click", function(){        
+        $(".collection").on("click", function(){     
             var navdd = $(this).children(".nav-drop-out");
 
             if($(navdd).css("grid-template-rows") == "0px")
