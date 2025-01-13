@@ -39,4 +39,28 @@ $(document).ready(function(){
             top: e.pageY + 16
         })
     })
+
+    $( window ).on( "resize", function(){
+        var source = $('.backdropvideo source').first();
+        var mobile_vid = "Videos/Highlights_Mobile.mp4";
+        var desktop_vid = "Videos/VFX_Portfolio_Highlights_3000.mp4";
+
+        //console.log(window.innerWidth/window.innerHeight);
+        if(window.innerWidth/window.innerHeight <= .5625){
+            if(source.attr("src") != mobile_vid){
+                source.attr("src", mobile_vid);
+                $('.backdropvideo')[0].load();
+                $('.backdropvideo')[0].play();
+                console.log("mobile bg");
+            }
+        }
+        else{
+            if(source.attr("src") != desktop_vid){
+                source.attr("src", desktop_vid);
+                $('.backdropvideo')[0].load();
+                $('.backdropvideo')[0].play();
+                console.log("desktop bg");
+            }
+        }
+    });
 });
