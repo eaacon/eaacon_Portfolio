@@ -6,12 +6,6 @@ $(document).ready(function(){
             speed: 1000
         });
     }
-        
-    $('.mail').on("click", function(){
-        var copyText =  $('#address').first().text();
-        navigator.clipboard.writeText(copyText);
-        //alert('copied text: ' + copyText); 
-    });
 
     if ($('.mobile-sensor').css("position") != "absolute")
     {
@@ -23,6 +17,9 @@ $(document).ready(function(){
     }
 
     $(".mail").on("click", function(){
+        var copyText =  $('#address').first().text();
+        navigator.clipboard.writeText(copyText);
+
         if ($('.mobile-sensor').css("position") != "absolute"){
             $('.tooltip').text("e-mail copied!");
             setTimeout(() => {
