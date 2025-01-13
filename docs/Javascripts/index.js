@@ -18,7 +18,12 @@ $.fn.togvid = function(action){
     }
 };
 
+
+
 $(document).ready(function(){
+    
+    updateBGVideo();
+
     $("#openvideo").on('click', function(){
         $('.modal').togvid("in");
     });
@@ -40,8 +45,11 @@ $(document).ready(function(){
         })
     })
 
-    $( window ).on( "resize", function(){
-        var source = $('.backdropvideo source').first();
+    $( window ).on( "resize", updateBGVideo);
+});
+
+function updateBGVideo(){
+    var source = $('.backdropvideo source').first();
         var mobile_vid = "Videos/Highlights_Mobile.mp4";
         var desktop_vid = "Videos/VFX_Portfolio_Highlights_3000.mp4";
 
@@ -62,5 +70,4 @@ $(document).ready(function(){
                 console.log("desktop bg");
             }
         }
-    });
-});
+}

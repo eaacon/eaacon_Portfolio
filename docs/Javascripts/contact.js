@@ -28,7 +28,7 @@ $(document).ready(function(){
             setTimeout(() => {
                 $('.tooltip').text("click to copy!")
             }, 2000);
-        }
+        }   
         else{
             $('#address').text("e-mail copied!");
             setTimeout(() => {
