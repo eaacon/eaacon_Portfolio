@@ -54,7 +54,7 @@ function updateBGVideo(){
         var desktop_vid = "Videos/VFX_Portfolio_Highlights_3000.mp4";
 
         //console.log(window.innerWidth/window.innerHeight);
-        if(document.documentElement.clientWidth/document.documentElement.clientHeight <= .7){
+        if($('.hero').width()/$('.hero').height() <= .7){
             if(source.attr("src") != mobile_vid){
                 source.attr("src", mobile_vid);
                 $('.backdropvideo')[0].load();
