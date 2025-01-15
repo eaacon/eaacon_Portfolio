@@ -77,10 +77,13 @@
 .socials {
   display: grid;
   margin-top: 1vw;
-  grid-template-columns: repeat(5, 3vw);
+  grid-template-columns: repeat(6, 3vw);
   gap: 1rem;
   font-family: "loss-normal", sans-serif;
   transform-style: preserve-3d;
+}
+.socials #bs {
+  filter: saturate(0%) brightness(140%);
 }
 .socials a {
   transform: translateZ(5px);
@@ -103,6 +106,9 @@
 }
 .socials a:hover #li {
   filter: invert(24%) sepia(34%) saturate(5960%) hue-rotate(198deg) brightness(96%) contrast(92%);
+}
+.socials a:hover #bs {
+  filter: none;
 }
 .socials img {
   filter: invert(70%);
